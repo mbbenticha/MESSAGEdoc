@@ -1,54 +1,37 @@
 Chapter 2
+==========
 
 Conversion Technologies
+-----------------------
 
 2.1 Variables
---------------
+-------------
 
+Energy conversion technologies are modelled using two types of variables, that represent:
 
-Energy conversion technologies are modelled using two types of variables, that represent
-
-- the amount of energy converted per year in a period (activity variables) and
-- the capacity installed annually in a period (capacity variables).
-
-
+- the amount of energy converted per year in a period (activity variables)
 
 2.1.1 Activities of Energy Conversion Technologies
--------------------------------------------------
+--------------------------------------------------
 
+.. code-block::
 
-where
+    z_{s,v,d,e,l,t}
 
-z_{s,v,d,e,l,t}
+where:
 
-is the level identifier of the main output of the technology.
-z = U identifies the end-use level. This level is handled differently to all other
-levels: It has to be the demand level and technologies with the main output on
-this level are defined without load regions.
+- `z` is the level identifier of the main output of the technology.
+- `z = U` identifies the end-use level. This level is handled differently to all other levels: It has to be the demand level and technologies with the main output on this level are defined without load regions.
+- `s` is the main energy input of the technology (supply). If the technology has no input, `s` is set to "." (e.g., solar technologies),
+- `v` additional identifier of the conversion technology (used to distinguish technologies with the same input and output),
+- `d` is the main energy output of the technology (demand),
+- `e` is the level of reduction of demand due to own-price elasticities of demands (does only occur on the demand level; otherwise or if this demand has no elasticities `e = "."`),
+- `l` identifies the load region, `l ∈ {1,2,3,...}` or `l = "."`, if the technology is not modelled with load regions, and
+- `t` identifies the period, `t ∈ {a,b,c,...}`.
 
-is the main energy input of the technology (supply). If the technology has no
-input s is set to . (e.g., solar technologies),
-
-additional identifier of the conversion technology (used to distinguish technologies
-with the same input and output),
-
-is the main energy output of the technology (demand),
-
-is the level of reduction of demand due to own-price elasticities of demands (does
-only occur on the demand level; otherwise or if this demand has no elasticities e
-="),
-
-identifies the load region, 1 in {1,2,3,...} or 1 ="., ifthe technology is not
-modelled with load regions, and
-
-identifies the period, t in {a,6.¢,..}-
-
-The activity variable of an energy conversion technology is an energy flow variable. It
-represents the annual consumption of this technology of the main input per period. If a
-technology has no input, the variable represents the annual production of the main output.
+The activity variable of an energy conversion technology is an energy flow variable. It represents the annual consumption of this technology of the main input per period. If a technology has no input, the variable represents the annual production of the main output.
 
 If the level of the main output is not U and and at least one of the energy carriers consumed or
-
 supplied is defined with load regions the technology is defined with load regions. In this case
 the activity variables are generated separately for each load region, which is indicated by the
 additional identifier lin position 7. However, this can be changed by fixing the production of
