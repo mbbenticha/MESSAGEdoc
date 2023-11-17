@@ -24,3 +24,4 @@ Contents
    message_06_flow
    message_07_stock
    message_08_user
+   message_09_objective
