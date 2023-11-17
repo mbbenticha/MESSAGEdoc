@@ -21,3 +21,4 @@ Contents
    message_03_storage
    message_04_resources
    message_05_import
+   message_06_flow
