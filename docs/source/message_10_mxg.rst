@@ -351,7 +351,7 @@ may not be handled adequately.
 The aggregated objective function has the following general form:
 
 .. math::
-    (The mathematical formula was not captured accurately by the OCR.)
+    \min \sum_{n} \sum_{t} \left[ \max_{j \in J_n} \frac{|y_{jt}^* - y_{jt}|}{\alpha_{jt}} \right] + \epsilon \sum_{j \in J_n} \frac{y_{jt}^* - y_{jt}}{\alpha_{jt}}
 
 where
 - n is the index for the nodes,
