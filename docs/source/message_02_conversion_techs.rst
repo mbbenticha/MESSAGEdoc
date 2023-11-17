@@ -157,6 +157,7 @@ In the following, this constraint is only described for technologies without loa
    \sum_{c/s} e_{resv,d}^{c/s} \times C_{var}^{c/s} \times X_{c/sv,d.t} - \sum_{\tau=T_{start}}^{t-1} \Delta (\tau - 1) \times f_{svd} \times X_{svd.\tau} \leq h_{svd}^{cap} \times f_{svd} \times X_{svd.t}
 
 The following notation is used in the above equations:
+
 .. list-table::
    :header-rows: 1
    :widths: 10 30
