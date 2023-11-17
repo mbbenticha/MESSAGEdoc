@@ -25,3 +25,4 @@ Contents
    message_07_stock
    message_08_user
    message_09_objective
+   message_10_mxg
