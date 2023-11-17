@@ -20,3 +20,4 @@ Contents
    message_02_conversion_techs
    message_03_storage
    message_04_resources
+   message_05_import
