@@ -19,3 +19,4 @@ Contents
    message_01_introduction
    message_02_conversion_techs
    message_03_storage
+   message_04_resources
