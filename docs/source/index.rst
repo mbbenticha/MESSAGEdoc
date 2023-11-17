@@ -22,3 +22,4 @@ Contents
    message_04_resources
    message_05_import
    message_06_flow
+   message_07_stock
